@@ -1,0 +1,18 @@
+version: 2
+
+seeds:
+  - name: seed_indicators
+    description: "Configuration for macro indicators to track"
+    config:
+      schema: raw
+      column_types:
+        indicator_id: varchar(50)
+        is_active: boolean
+        
+  - name: seed_tickers
+    description: "Configuration for market tickers to track"
+    config:
+      schema: raw
+      column_types:
+        ticker: varchar(20)
+        is_active: boolean

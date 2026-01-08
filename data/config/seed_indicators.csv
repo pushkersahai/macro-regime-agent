@@ -1,0 +1,5 @@
+indicator_id,indicator_name,category,fred_series_id,interpretation,is_active,notes
+UNRATE,Unemployment Rate,GROWTH,UNRATE,HIGHER_IS_RISKIER,TRUE,Rising unemployment signals economic weakness
+T10Y2Y,10Y-2Y Treasury Spread,RATES,T10Y2Y,LOWER_IS_RISKIER,TRUE,Inverted yield curve predicts recession
+CPIAUCSL,Consumer Price Index,INFLATION,CPIAUCSL,HIGHER_IS_RISKIER,TRUE,Rising inflation can trigger Fed tightening
+BAMLH0A0HYM2,High Yield Spread,CREDIT,BAMLH0A0HYM2,HIGHER_IS_RISKIER,TRUE,Widening credit spreads signal risk aversion

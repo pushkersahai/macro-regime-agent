@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw
+    database: macro_agent
+    schema: raw
+    tables:
+      - name: fred_indicators
+        description: "Raw macro economic indicators from FRED API"
+        
+      - name: market_prices
+        description: "Raw monthly market prices"
+        
+      - name: config_indicators
+        description: "Configuration for which indicators to track"
+        
+      - name: config_tickers
+        description: "Configuration for which tickers to track"
+        
+      - name: seed_indicators
+        description: "Seed data for indicator configuration"
+        
+      - name: seed_tickers
+        description: "Seed data for ticker configuration"

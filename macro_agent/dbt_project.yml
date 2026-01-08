@@ -1,0 +1,39 @@
+name: 'macro_agent'
+version: '1.0.0'
+config-version: 2
+
+profile: 'macro_agent'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  macro_agent:
+    # Staging models (bronze layer)
+    staging:
+      +materialized: view
+      +schema: bronze
+      
+    # Intermediate models (silver layer)
+    intermediate:
+      +materialized: view
+      +schema: silver
+      
+    # Final models (gold layer)
+    marts:
+      +materialized: table
+      +schema: gold
+      
+    # Decision outputs
+    decisions:
+      +materialized: table
+      +schema: decisions
