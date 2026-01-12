@@ -194,10 +194,9 @@ macro-regime-agent/
 
 ##  Author
 
-**Your Name**
-- Portfolio: [your-portfolio-link]
-- LinkedIn: [your-linkedin]
-- GitHub: [@your-username](https://github.com/your-username)
+**Pushker Sahai**
+www.linkedin.com/in/pushkersahai
+
 
 ## License
 
